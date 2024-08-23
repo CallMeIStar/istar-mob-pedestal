@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "istars-mob-totems:block/netherite_slime_pedestal"},
+    "facing=east":  { "model": "istars-mob-totems:block/netherite_slime_pedestal", "y":  90},
+    "facing=south": { "model": "istars-mob-totems:block/netherite_slime_pedestal", "y": 180},
+    "facing=west":  { "model": "istars-mob-totems:block/netherite_slime_pedestal", "y": 270}
+  }
+}

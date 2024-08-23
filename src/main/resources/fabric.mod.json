@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "istars-mob-totems",
+	"version": "${version}",
+	"name": "IStar's Mob Totems",
+	"description": "Prevent certain mobs from spawning",
+	"authors": [
+		"IStar"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/istars-mob-totems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.istar.mobtotem.IStarsMobTotems"
+		],
+		"client": [
+			"net.istar.mobtotem.IStarsMobTotemsClient"
+		],
+		"fabric-datagen": [
+			"net.istar.mobtotem.IStarsMobTotemsDataGenerator"
+		]
+	},
+	"mixins": [
+		"istars-mob-totems.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

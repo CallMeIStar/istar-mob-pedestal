@@ -1,0 +1,14 @@
+{
+  "values": [
+    "istars-mob-pedestal:slime_kill",
+    "istars-mob-pedestal:zombie_kill",
+    "istars-mob-pedestal:creeper_kill",
+    "istars-mob-pedestal:skeleton_kill",
+    "istars-mob-pedestal:stray_kill",
+    "istars-mob-pedestal:husk_kill",
+    "istars-mob-pedestal:spider_kill",
+    "istars-mob-pedestal:witch_kill",
+    "istars-mob-pedestal:enderman_kill",
+    "istars-mob-pedestal:phantom_kill"
+  ]
+}

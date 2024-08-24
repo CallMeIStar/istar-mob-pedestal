@@ -13,7 +13,7 @@ public enum MobType {
     STRAY,
     PHANTOM,
     WITCH,
-    ENDERMAN;// Added new mob types
+    ENDERMAN; // Added new mob types
 
     public static MobType fromEntity(Entity entity) {
         if (entity instanceof SlimeEntity) {

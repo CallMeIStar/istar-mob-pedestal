@@ -89,6 +89,24 @@ public class ModBlockEntities {
                                     return new MobPedestalBlockEntity(pos, state, MobType.PHANTOM, 128);
                                 }
 
+                                // Enderman Pedestals
+                                else if (block == ModBlocks.GOLDEN_ENDERMAN_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.ENDERMAN, 24);
+                                } else if (block == ModBlocks.DIAMOND_ENDERMAN_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.ENDERMAN, 64);
+                                } else if (block == ModBlocks.NETHERITE_ENDERMAN_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.ENDERMAN, 128);
+                                }
+
+                                // Witch Pedestals
+                                else if (block == ModBlocks.GOLDEN_WITCH_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.WITCH, 24);
+                                } else if (block == ModBlocks.DIAMOND_WITCH_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.WITCH, 64);
+                                } else if (block == ModBlocks.NETHERITE_WITCH_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.WITCH, 128);
+                                }
+
                                 return null;  // Should not happen, add a fallback or throw an exception if needed.
                             },
                             ModBlocks.GOLDEN_SLIME_PEDESTAL,
@@ -115,7 +133,7 @@ public class ModBlockEntities {
                             ModBlocks.GOLDEN_PHANTOM_PEDESTAL,
                             ModBlocks.DIAMOND_PHANTOM_PEDESTAL,
                             ModBlocks.NETHERITE_PHANTOM_PEDESTAL,
-                            ModBlocks.GOLDEN_PHANTOM_PEDESTAL,
+                            ModBlocks.GOLDEN_WITCH_PEDESTAL,
                             ModBlocks.DIAMOND_WITCH_PEDESTAL,
                             ModBlocks.NETHERITE_WITCH_PEDESTAL,
                             ModBlocks.GOLDEN_ENDERMAN_PEDESTAL,

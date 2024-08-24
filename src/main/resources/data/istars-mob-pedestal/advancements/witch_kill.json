@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "killed_witch": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:witch"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "istars-mob-pedestal:witch_kill"
+  }
+}

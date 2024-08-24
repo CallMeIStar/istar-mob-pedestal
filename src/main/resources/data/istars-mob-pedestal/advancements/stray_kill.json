@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "killed_stray": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:stray"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "istars-mob-pedestal:stray_kill"
+  }
+}

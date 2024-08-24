@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "killed_enderman": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:enderman"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "istars-mob-pedestal:enderman_kill"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "istars-mob-totems:block/diamond_skeleton_pedestal"},
-    "facing=east":  { "model": "istars-mob-totems:block/diamond_skeleton_pedestal", "y":  90},
-    "facing=south": { "model": "istars-mob-totems:block/diamond_skeleton_pedestal", "y": 180},
-    "facing=west":  { "model": "istars-mob-totems:block/diamond_skeleton_pedestal", "y": 270}
-  }
-}

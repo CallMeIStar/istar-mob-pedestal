@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "istars-mob-totems",
+	"id": "istars-mob-pedestal",
 	"version": "${version}",
-	"name": "IStar's Mob Totems",
+	"name": "IStar's Mob Pedestal",
 	"description": "Prevent certain mobs from spawning",
 	"authors": [
 		"IStar"
@@ -12,21 +12,21 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/istars-mob-totems/icon.png",
+	"icon": "assets/istars-mob-pedestal/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.istar.mobtotem.IStarsMobTotems"
+			"net.istar.mobpedestal.IStarsMobPedestal"
 		],
 		"client": [
-			"net.istar.mobtotem.IStarsMobTotemsClient"
+			"net.istar.mobpedestal.IStarsMobPedestalClient"
 		],
 		"fabric-datagen": [
-			"net.istar.mobtotem.IStarsMobTotemsDataGenerator"
+			"net.istar.mobpedestal.IStarsMobPedestalDataGenerator"
 		]
 	},
 	"mixins": [
-		"istars-mob-totems.mixins.json"
+		"istars-mob-pedestal.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",

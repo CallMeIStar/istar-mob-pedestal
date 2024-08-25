@@ -51,7 +51,6 @@ public class MobPedestalBlockEntity extends BlockEntity {
         super.setWorld(world);
         if (!world.isClient && world instanceof ServerWorld) {
             MobPedestalTracker.addTotem(mobType, pos, radius);
-            System.out.println("Restored totem at position: " + pos + " with mobType: " + mobType + " and radius: " + radius);
         }
     }
 
@@ -61,7 +60,6 @@ public class MobPedestalBlockEntity extends BlockEntity {
         super.markRemoved();
         if (world != null && !world.isClient) {
             MobPedestalTracker.removeTotem(mobType, pos, radius);
-            System.out.println("Removed totem at position: " + pos + " with mobType: " + mobType + " and radius: " + radius);
         }
     }
 }

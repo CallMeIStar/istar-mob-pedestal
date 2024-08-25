@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IGI",
+    "GSG",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:gold_ingot"
+    },
+    "G": {
+      "item": "minecraft:diamond"
+    },
+    "S": {
+      "item": "istars-mob-pedestal:phantom_soul"
+    },
+    "P": {
+      "item": "istars-mob-pedestal:golden_phantom_pedestal"
+    }
+  },
+  "result": {
+    "item": "istars-mob-pedestal:diamond_phantom_pedestal",
+    "count": 1
+  }
+}

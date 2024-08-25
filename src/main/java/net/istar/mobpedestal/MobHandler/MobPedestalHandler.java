@@ -26,13 +26,9 @@ public class MobPedestalHandler {
             MobType mobType = MobType.fromEntity(entity);
 
             if (mobType != null) {
-                System.out.println("Detected mobType " + mobType + " at position " + spawnPos);
                 if (MobPedestalTracker.isNearTotem(mobType, spawnPos)) {
-                    System.out.println("Preventing spawn for " + mobType + " at " + spawnPos);
                     entity.discard();
                 }
-            } else {
-                System.out.println("Unrecognized mob type for entity at position " + spawnPos);
             }
         }
     }

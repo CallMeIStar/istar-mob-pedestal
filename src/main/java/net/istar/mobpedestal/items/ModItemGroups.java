@@ -12,7 +12,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup PEDESTAL_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(IStarsMobPedestal.MOD_ID, "pedestal"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.pedestal"))
                     .icon(() -> new ItemStack(ModBlocks.DIAMOND_SLIME_PEDESTAL)).entries((displayContext, entries) -> {

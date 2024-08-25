@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "SNS",
+    "IPI"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "I": {
+      "item": "minecraft:gold_ingot"
+    },
+    "G": {
+      "item": "minecraft:diamond"
+    },
+    "S": {
+      "item": "istars-mob-pedestal:enderman_soul"
+    },
+    "P": {
+      "item": "istars-mob-pedestal:diamond_enderman_pedestal"
+    }
+  },
+  "result": {
+    "item": "istars-mob-pedestal:netherite_enderman_pedestal",
+    "count": 1
+  }
+}

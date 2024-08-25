@@ -1,0 +1,55 @@
+{
+  "item.istars-mob-pedestal.slime_soul": "Slime Soul",
+  "item.istars-mob-pedestal.skeleton_soul": "Skeleton Soul",
+  "item.istars-mob-pedestal.husk_soul": "Husk Soul",
+  "item.istars-mob-pedestal.creeper_soul": "Creeper Soul",
+  "item.istars-mob-pedestal.zombie_soul": "Zombie Soul",
+  "item.istars-mob-pedestal.spider_soul": "Spider Soul",
+  "item.istars-mob-pedestal.stray_soul": "Stray Soul",
+  "item.istars-mob-pedestal.phantom_soul": "Phantom Soul",
+  "item.istars-mob-pedestal.witch_soul": "Witch Soul",
+  "item.istars-mob-pedestal.enderman_soul": "Enderman Soul",
+
+  "block.istars-mob-pedestal.golden_slime_pedestal": "Lesser Slime Pedestal",
+  "block.istars-mob-pedestal.diamond_slime_pedestal": "Greater Slime Pedestal",
+  "block.istars-mob-pedestal.netherite_slime_pedestal": "Supreme Slime Pedestal",
+
+  "block.istars-mob-pedestal.golden_skeleton_pedestal": "Lesser Skeleton Pedestal",
+  "block.istars-mob-pedestal.diamond_skeleton_pedestal": "Greater Skeleton Pedestal",
+  "block.istars-mob-pedestal.netherite_skeleton_pedestal": "Supreme Skeleton Pedestal",
+
+  "block.istars-mob-pedestal.golden_husk_pedestal": "Lesser Husk Pedestal",
+  "block.istars-mob-pedestal.diamond_husk_pedestal": "Greater Husk Pedestal",
+  "block.istars-mob-pedestal.netherite_husk_pedestal": "Supreme Husk Pedestal",
+
+  "block.istars-mob-pedestal.golden_creeper_pedestal": "Lesser Creeper Pedestal",
+  "block.istars-mob-pedestal.diamond_creeper_pedestal": "Greater Creeper Pedestal",
+  "block.istars-mob-pedestal.netherite_creeper_pedestal": "Supreme Creeper Pedestal",
+
+  "block.istars-mob-pedestal.golden_zombie_pedestal": "Lesser Zombie Pedestal",
+  "block.istars-mob-pedestal.diamond_zombie_pedestal": "Greater Zombie Pedestal",
+  "block.istars-mob-pedestal.netherite_zombie_pedestal": "Supreme Zombie Pedestal",
+
+  "block.istars-mob-pedestal.golden_spider_pedestal": "Lesser Spider Pedestal",
+  "block.istars-mob-pedestal.diamond_spider_pedestal": "Greater Spider Pedestal",
+  "block.istars-mob-pedestal.netherite_spider_pedestal": "Supreme Spider Pedestal",
+
+  "block.istars-mob-pedestal.golden_stray_pedestal": "Lesser Stray Pedestal",
+  "block.istars-mob-pedestal.diamond_stray_pedestal": "Greater Stray Pedestal",
+  "block.istars-mob-pedestal.netherite_stray_pedestal": "Supreme Stray Pedestal",
+
+  "block.istars-mob-pedestal.golden_phantom_pedestal": "Lesser Phantom Pedestal",
+  "block.istars-mob-pedestal.diamond_phantom_pedestal": "Greater Phantom Pedestal",
+  "block.istars-mob-pedestal.netherite_phantom_pedestal": "Supreme Phantom Pedestal",
+
+  "block.istars-mob-pedestal.golden_witch_pedestal": "Lesser Witch Pedestal",
+  "block.istars-mob-pedestal.diamond_witch_pedestal": "Greater Witch Pedestal",
+  "block.istars-mob-pedestal.netherite_witch_pedestal": "Supreme Witch Pedestal",
+
+  "block.istars-mob-pedestal.golden_enderman_pedestal": "Lesser Enderman Pedestal",
+  "block.istars-mob-pedestal.diamond_enderman_pedestal": "Greater Enderman Pedestal",
+  "block.istars-mob-pedestal.netherite_enderman_pedestal": "Supreme Enderman Pedestal",
+
+
+  "itemgroup.pedestal": "IStar's Mob Pedestal"
+}

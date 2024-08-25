@@ -18,7 +18,6 @@ public class MobPedestalTracker {
                 .computeIfAbsent(mobType, k -> new HashMap<>())
                 .computeIfAbsent(radius, k -> new HashSet<>())
                 .add(pos);
-        System.out.println("Added totem for mobType " + mobType + " at " + pos + " with radius " + radius);
     }
 
     public static void removeTotem(MobType mobType, BlockPos pos, int radius) {
@@ -35,7 +34,6 @@ public class MobPedestalTracker {
                 }
             }
         }
-        System.out.println("Removed totem for mobType " + mobType + " at " + pos + " with radius " + radius);
     }
 
     public static boolean isNearTotem(MobType mobType, BlockPos pos) {
@@ -48,27 +46,11 @@ public class MobPedestalTracker {
                     double distanceSquared = totemPos.getSquaredDistance(pos.getX(), pos.getY(), pos.getZ());
                     double radiusSquared = radius * radius;
                     if (distanceSquared <= radiusSquared) {
-                        System.out.println("Position " + pos + " is within radius of totem at " + totemPos + " with radius " + radius);
                         return true;
                     }
                 }
             }
-        } else {
-            System.out.println("MobType " + mobType + " is not recognized or has no associated totems.");
         }
-        System.out.println("Position " + pos + " is not within radius of any totem for mobType " + mobType);
         return false;
-    }
-    public static void printTotemMap() {
-        System.out.println("Current Totem Map:");
-        for (Map.Entry<MobType, Map<Integer, Set<BlockPos>>> entry : PEDSTAL_POSITIONS.entrySet()) {
-            System.out.println("MobType: " + entry.getKey());
-            for (Map.Entry<Integer, Set<BlockPos>> radiusEntry : entry.getValue().entrySet()) {
-                System.out.println("  Radius: " + radiusEntry.getKey());
-                for (BlockPos pos : radiusEntry.getValue()) {
-                    System.out.println("    Position: " + pos);
-                }
-            }
-        }
     }
 }

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IGI",
+    "GSG",
+    "CCC"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "S": {
+      "item": "istars-mob-pedestal:witch_soul"
+    },
+    "C": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "result": {
+    "item": "istars-mob-pedestal:golden_witch_pedestal",
+    "count": 1
+  }
+}

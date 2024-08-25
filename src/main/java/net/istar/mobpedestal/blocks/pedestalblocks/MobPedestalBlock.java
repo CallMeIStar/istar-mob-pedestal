@@ -33,7 +33,6 @@ public abstract class MobPedestalBlock extends Block implements BlockEntityProvi
 
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        System.out.println("Creating BlockEntity at position: " + pos + " with mobType: " + mobType + " and radius: " + radius);
         return new MobPedestalBlockEntity(pos, state, mobType, radius);
     }
 
@@ -42,7 +41,6 @@ public abstract class MobPedestalBlock extends Block implements BlockEntityProvi
         super.onBroken(world, pos, state);
         if (!world.isClient()) {
             MobPedestalTracker.removeTotem(mobType, pos, radius);
-            System.out.println("Removed totem at position: " + pos + " with mobType: " + mobType);
         }
     }
 
@@ -51,7 +49,6 @@ public abstract class MobPedestalBlock extends Block implements BlockEntityProvi
         super.onPlaced(world, pos, state, placer, itemStack);
         if (!world.isClient()) {
             MobPedestalTracker.addTotem(mobType, pos, radius);
-            System.out.println("Added totem at position: " + pos + " with mobType: " + mobType);
         }
     }
 

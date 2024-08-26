@@ -9,6 +9,7 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldAccess;
 
 
 public class MobPedestalBlockEntity extends BlockEntity {
@@ -50,7 +51,10 @@ public class MobPedestalBlockEntity extends BlockEntity {
     public void setWorld(World world) {
         super.setWorld(world);
         if (!world.isClient && world instanceof ServerWorld) {
-            MobPedestalTracker.addTotem(mobType, pos, radius);
+            BlockState state = world.getBlockState(pos);
+            if (state.get(MobPedestalBlock.ACTIVE)) {
+                MobPedestalTracker.addTotem(mobType, pos, radius);
+            }
         }
     }
 

@@ -1,8 +1,34 @@
 {
   "variants": {
-    "facing=north": { "model": "istars-mob-pedestal:block/golden_witch_pedestal"},
-    "facing=east":  { "model": "istars-mob-pedestal:block/golden_witch_pedestal", "y":  90},
-    "facing=south": { "model": "istars-mob-pedestal:block/golden_witch_pedestal", "y": 180},
-    "facing=west":  { "model": "istars-mob-pedestal:block/golden_witch_pedestal", "y": 270}
+    "facing=north,active=false": {
+      "model": "istars-mob-pedestal:block/red_witch_pedestal"
+    },
+    "facing=north,active=true": {
+      "model": "istars-mob-pedestal:block/golden_witch_pedestal"
+    },
+    "facing=east,active=false": {
+      "model": "istars-mob-pedestal:block/red_witch_pedestal",
+      "y": 90
+    },
+    "facing=east,active=true": {
+      "model": "istars-mob-pedestal:block/golden_witch_pedestal",
+      "y": 90
+    },
+    "facing=south,active=false": {
+      "model": "istars-mob-pedestal:block/red_witch_pedestal",
+      "y": 180
+    },
+    "facing=south,active=true": {
+      "model": "istars-mob-pedestal:block/golden_witch_pedestal",
+      "y": 180
+    },
+    "facing=west,active=false": {
+      "model": "istars-mob-pedestal:block/red_witch_pedestal",
+      "y": 270
+    },
+    "facing=west,active=true": {
+      "model": "istars-mob-pedestal:block/golden_witch_pedestal",
+      "y": 270
+    }
   }
 }

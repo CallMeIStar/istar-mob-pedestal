@@ -58,30 +58,6 @@ public class GoldenSlimePedestalBlock extends MobPedestalBlock {
     public static int getLuminance(BlockState state) {
         return state.get(ACTIVE) ? 15 : 0; // Full light level when activated
     }
-    @Override
-    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {
-        if (!world.isClient && world.isReceivingRedstonePower(pos)) {
-            // Toggle the "active" state whenever a redstone signal is received
-            boolean activated = state.get(ACTIVE);
-            BlockState newState = state.with(ACTIVE, !activated);
-            world.setBlockState(pos, newState);
-
-            // Update the MobPedestalTracker based on the new state
-            updateTracker(world, pos, newState.get(ACTIVE));
-        }
-    }
-
-    private void updateTracker(World world, BlockPos pos, boolean active) {
-        BlockEntity blockEntity = world.getBlockEntity(pos);
-        if (blockEntity instanceof MobPedestalBlockEntity) {
-            MobPedestalBlockEntity pedestal = (MobPedestalBlockEntity) blockEntity;
-            if (active) {
-                MobPedestalTracker.addTotem(pedestal.getMobType(), pos, pedestal.getRadius());
-            } else {
-                MobPedestalTracker.removeTotem(pedestal.getMobType(), pos, pedestal.getRadius());
-            }
-        }
-    }
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {

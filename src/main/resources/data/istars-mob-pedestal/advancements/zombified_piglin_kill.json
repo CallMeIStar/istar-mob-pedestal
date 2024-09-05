@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "killed_zombified_piglin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:zombified_piglin"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "istars-mob-pedestal:zombified_piglin_kill"
+    }
+}

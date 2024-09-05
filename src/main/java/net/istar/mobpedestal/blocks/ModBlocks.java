@@ -14,6 +14,273 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
+    public static final Block GOLDEN_DROWNED_PEDESTAL = registerBlock(
+            "golden_drowned_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.DROWNED, 28 // Mob type and radius for the golden pedestal
+            )
+    );
+
+    public static final Block DIAMOND_DROWNED_PEDESTAL = registerBlock(
+            "diamond_drowned_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.DROWNED, 64 // Mob type and radius for the diamond pedestal
+            )
+    );
+
+    public static final Block NETHERITE_DROWNED_PEDESTAL = registerBlock(
+            "netherite_drowned_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.DROWNED, 128 // Mob type and radius for the netherite pedestal
+            )
+    );
+
+    public static final Block GOLDEN_ZOMBIFIED_PIGLIN_PEDESTAL = registerBlock(
+            "golden_zombified_piglin_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.ZOMBIFIED_PIGLIN, 28 // Mob type and radius for the golden pedestal
+            )
+    );
+
+    public static final Block DIAMOND_ZOMBIFIED_PIGLIN_PEDESTAL = registerBlock(
+            "diamond_zombified_piglin_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.ZOMBIFIED_PIGLIN, 64 // Mob type and radius for the diamond pedestal
+            )
+    );
+
+    public static final Block NETHERITE_ZOMBIFIED_PIGLIN_PEDESTAL = registerBlock(
+            "netherite_zombified_piglin_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.ZOMBIFIED_PIGLIN, 128 // Mob type and radius for the netherite pedestal
+            )
+    );
+
+    public static final Block GOLDEN_BLAZE_PEDESTAL = registerBlock(
+            "golden_blaze_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.BLAZE, 28 // Mob type and radius for the golden pedestal
+            )
+    );
+
+    public static final Block DIAMOND_BLAZE_PEDESTAL = registerBlock(
+            "diamond_blaze_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.BLAZE, 64 // Mob type and radius for the diamond pedestal
+            )
+    );
+
+    public static final Block NETHERITE_BLAZE_PEDESTAL = registerBlock(
+            "netherite_blaze_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.BLAZE, 128 // Mob type and radius for the netherite pedestal
+            )
+    );
+
+    public static final Block GOLDEN_GUARDIAN_PEDESTAL = registerBlock(
+            "golden_guardian_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.GUARDIAN, 28 // Mob type and radius for the golden pedestal
+            )
+    );
+
+    public static final Block DIAMOND_GUARDIAN_PEDESTAL = registerBlock(
+            "diamond_guardian_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.GUARDIAN, 64 // Mob type and radius for the diamond pedestal
+            )
+    );
+
+    public static final Block NETHERITE_GUARDIAN_PEDESTAL = registerBlock(
+            "netherite_guardian_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.GUARDIAN, 128 // Mob type and radius for the netherite pedestal
+            )
+    );
+
+    public static final Block GOLDEN_HOGLIN_PEDESTAL = registerBlock(
+            "golden_hoglin_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.HOGLIN, 28 // Mob type and radius for the golden pedestal
+            )
+    );
+
+    public static final Block DIAMOND_HOGLIN_PEDESTAL = registerBlock(
+            "diamond_hoglin_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.HOGLIN, 64 // Mob type and radius for the diamond pedestal
+            )
+    );
+
+    public static final Block NETHERITE_HOGLIN_PEDESTAL = registerBlock(
+            "netherite_hoglin_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.HOGLIN, 128 // Mob type and radius for the netherite pedestal
+            )
+    );
+
+
+    public static final Block GOLDEN_WITHER_SKELETON_PEDESTAL = registerBlock(
+            "golden_wither_skeleton_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.WITHER_SKELETON, 28 // Mob type and radius for the golden pedestal
+            )
+    );
+
+    public static final Block DIAMOND_WITHER_SKELETON_PEDESTAL = registerBlock(
+            "diamond_wither_skeleton_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.WITHER_SKELETON, 64 // Mob type and radius for the diamond pedestal
+            )
+    );
+
+    public static final Block NETHERITE_WITHER_SKELETON_PEDESTAL = registerBlock(
+            "netherite_wither_skeleton_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.WITHER_SKELETON, 128 // Mob type and radius for the netherite pedestal
+            )
+    );
+
+    public static final Block GOLDEN_GHAST_PEDESTAL = registerBlock(
+            "golden_ghast_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.GHAST, 28 // Mob type and radius for the golden pedestal
+            )
+    );
+
+    public static final Block DIAMOND_GHAST_PEDESTAL = registerBlock(
+            "diamond_ghast_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.GHAST, 64 // Mob type and radius for the diamond pedestal
+            )
+    );
+
+    public static final Block NETHERITE_GHAST_PEDESTAL = registerBlock(
+            "netherite_ghast_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.GHAST, 128 // Mob type and radius for the netherite pedestal
+            )
+    );
+
+    public static final Block GOLDEN_MAGMA_CUBE_PEDESTAL = registerBlock(
+            "golden_magma_cube_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.MAGMA_CUBE, 28 // Mob type and radius for the golden pedestal
+            )
+    );
+
+
+    public static final Block DIAMOND_MAGMA_CUBE_PEDESTAL = registerBlock(
+            "diamond_magma_cube_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.MAGMA_CUBE, 64 // Mob type and radius for the diamond pedestal
+            )
+    );
+
+
+    public static final Block NETHERITE_MAGMA_CUBE_PEDESTAL = registerBlock(
+            "netherite_magma_cube_pedestal",
+            new MobPedestalBlock(
+                    FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)
+                            .nonOpaque()
+                            .notSolid()
+                            .luminance(MobPedestalBlock::getLuminance),
+                    MobType.MAGMA_CUBE, 128 // Mob type and radius for the netherite pedestal
+            )
+    );
+
     public static final Block GOLDEN_SLIME_PEDESTAL = registerBlock(
             "golden_slime_pedestal",
             new MobPedestalBlock(

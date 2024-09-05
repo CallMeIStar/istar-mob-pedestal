@@ -21,6 +21,14 @@ public class ModItems {
     public static final Item PHANTOM_SOUL = registerItem("phantom_soul", new Item(new FabricItemSettings()));
     public static final Item WITCH_SOUL = registerItem("witch_soul", new Item(new FabricItemSettings()));
     public static final Item ENDERMAN_SOUL = registerItem("enderman_soul", new Item(new FabricItemSettings()));
+    public static final Item DROWNED_SOUL = registerItem("drowned_soul", new Item(new FabricItemSettings()));
+    public static final Item ZOMBIFIED_PIGLIN_SOUL = registerItem("zombified_piglin_soul", new Item(new FabricItemSettings()));
+    public static final Item BLAZE_SOUL = registerItem("blaze_soul", new Item(new FabricItemSettings()));
+    public static final Item GUARDIAN_SOUL = registerItem("guardian_soul", new Item(new FabricItemSettings()));
+    public static final Item HOGLIN_SOUL = registerItem("hoglin_soul", new Item(new FabricItemSettings()));
+    public static final Item MAGMA_CUBE_SOUL = registerItem("magma_cube_soul", new Item(new FabricItemSettings()));
+    public static final Item WITHER_SKELETON_SOUL = registerItem("wither_skeleton_soul", new Item(new FabricItemSettings()));
+    public static final Item GHAST_SOUL = registerItem("ghast_soul", new Item(new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item) {

@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "IGI",
+        "GSG",
+        "IPI"
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:gold_ingot"
+        },
+        "G": {
+            "item": "minecraft:diamond"
+        },
+        "S": {
+            "item": "istars-mob-pedestal:guardian_soul"
+        },
+        "P": {
+            "item": "istars-mob-pedestal:golden_guardian_pedestal"
+        }
+    },
+    "result": {
+        "item": "istars-mob-pedestal:diamond_guardian_pedestal",
+        "count": 1
+    }
+}

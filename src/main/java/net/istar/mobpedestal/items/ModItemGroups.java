@@ -46,6 +46,30 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GOLDEN_ENDERMAN_PEDESTAL);
                         entries.add(ModBlocks.DIAMOND_ENDERMAN_PEDESTAL);
                         entries.add(ModBlocks.NETHERITE_ENDERMAN_PEDESTAL);
+                        entries.add(ModBlocks.GOLDEN_DROWNED_PEDESTAL);
+                        entries.add(ModBlocks.DIAMOND_DROWNED_PEDESTAL);
+                        entries.add(ModBlocks.NETHERITE_DROWNED_PEDESTAL);
+                        entries.add(ModBlocks.GOLDEN_ZOMBIFIED_PIGLIN_PEDESTAL);
+                        entries.add(ModBlocks.DIAMOND_ZOMBIFIED_PIGLIN_PEDESTAL);
+                        entries.add(ModBlocks.NETHERITE_ZOMBIFIED_PIGLIN_PEDESTAL);
+                        entries.add(ModBlocks.GOLDEN_BLAZE_PEDESTAL);
+                        entries.add(ModBlocks.DIAMOND_BLAZE_PEDESTAL);
+                        entries.add(ModBlocks.NETHERITE_BLAZE_PEDESTAL);
+                        entries.add(ModBlocks.GOLDEN_GUARDIAN_PEDESTAL);
+                        entries.add(ModBlocks.DIAMOND_GUARDIAN_PEDESTAL);
+                        entries.add(ModBlocks.NETHERITE_GUARDIAN_PEDESTAL);
+                        entries.add(ModBlocks.GOLDEN_HOGLIN_PEDESTAL);
+                        entries.add(ModBlocks.DIAMOND_HOGLIN_PEDESTAL);
+                        entries.add(ModBlocks.NETHERITE_HOGLIN_PEDESTAL);
+                        entries.add(ModBlocks.GOLDEN_MAGMA_CUBE_PEDESTAL);
+                        entries.add(ModBlocks.DIAMOND_MAGMA_CUBE_PEDESTAL);
+                        entries.add(ModBlocks.NETHERITE_MAGMA_CUBE_PEDESTAL);
+                        entries.add(ModBlocks.GOLDEN_WITHER_SKELETON_PEDESTAL);
+                        entries.add(ModBlocks.DIAMOND_WITHER_SKELETON_PEDESTAL);
+                        entries.add(ModBlocks.NETHERITE_WITHER_SKELETON_PEDESTAL);
+                        entries.add(ModBlocks.GOLDEN_GHAST_PEDESTAL);
+                        entries.add(ModBlocks.DIAMOND_GHAST_PEDESTAL);
+                        entries.add(ModBlocks.NETHERITE_GHAST_PEDESTAL);
                         entries.add(ModItems.SLIME_SOUL);
                         entries.add(ModItems.SKELETON_SOUL);
                         entries.add(ModItems.HUSK_SOUL);
@@ -56,6 +80,14 @@ public class ModItemGroups {
                         entries.add(ModItems.PHANTOM_SOUL);
                         entries.add(ModItems.WITCH_SOUL);
                         entries.add(ModItems.ENDERMAN_SOUL);
+                        entries.add(ModItems.DROWNED_SOUL);
+                        entries.add(ModItems.ZOMBIFIED_PIGLIN_SOUL);
+                        entries.add(ModItems.BLAZE_SOUL);
+                        entries.add(ModItems.GUARDIAN_SOUL);
+                        entries.add(ModItems.HOGLIN_SOUL);
+                        entries.add(ModItems.MAGMA_CUBE_SOUL);
+                        entries.add(ModItems.WITHER_SKELETON_SOUL);
+                        entries.add(ModItems.GHAST_SOUL);
 
 
 

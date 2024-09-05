@@ -9,6 +9,15 @@
   "item.istars-mob-pedestal.phantom_soul": "Phantom Soul",
   "item.istars-mob-pedestal.witch_soul": "Witch Soul",
   "item.istars-mob-pedestal.enderman_soul": "Enderman Soul",
+  "item.istars-mob-pedestal.drowned_soul": "Drowned Soul",
+  "item.istars-mob-pedestal.zombified_piglin_soul": "Zombified Piglin Soul",
+  "item.istars-mob-pedestal.blaze_soul": "Blaze Soul",
+  "item.istars-mob-pedestal.guardian_soul": "Guardian Soul",
+  "item.istars-mob-pedestal.hoglin_soul": "Hoglin Soul",
+  "item.istars-mob-pedestal.magma_cube_soul": "Magma Cube Soul",
+  "item.istars-mob-pedestal.wither_skeleton_soul": "Wither Skeleton Soul",
+  "item.istars-mob-pedestal.ghast_soul": "Ghast Soul",
+
 
   "block.istars-mob-pedestal.golden_slime_pedestal": "Lesser Slime Pedestal",
   "block.istars-mob-pedestal.diamond_slime_pedestal": "Greater Slime Pedestal",
@@ -49,6 +58,38 @@
   "block.istars-mob-pedestal.golden_enderman_pedestal": "Lesser Enderman Pedestal",
   "block.istars-mob-pedestal.diamond_enderman_pedestal": "Greater Enderman Pedestal",
   "block.istars-mob-pedestal.netherite_enderman_pedestal": "Supreme Enderman Pedestal",
+
+  "block.istars-mob-pedestal.golden_drowned_pedestal": "Lesser Drowned Pedestal",
+  "block.istars-mob-pedestal.diamond_drowned_pedestal": "Greater Drowned Pedestal",
+  "block.istars-mob-pedestal.netherite_drowned_pedestal": "Supreme Drowned Pedestal",
+
+  "block.istars-mob-pedestal.golden_zombified_piglin_pedestal": "Lesser Zombified Piglin Pedestal",
+  "block.istars-mob-pedestal.diamond_zombified_piglin_pedestal": "Greater Zombified Piglin Pedestal",
+  "block.istars-mob-pedestal.netherite_zombified_piglin_pedestal": "Supreme Zombified Piglin Pedestal",
+
+  "block.istars-mob-pedestal.golden_blaze_pedestal": "Lesser Blaze Pedestal",
+  "block.istars-mob-pedestal.diamond_blaze_pedestal": "Greater Blaze Pedestal",
+  "block.istars-mob-pedestal.netherite_blaze_pedestal": "Supreme Blaze Pedestal",
+
+  "block.istars-mob-pedestal.golden_guardian_pedestal": "Lesser Guardian Pedestal",
+  "block.istars-mob-pedestal.diamond_guardian_pedestal": "Greater Guardian Pedestal",
+  "block.istars-mob-pedestal.netherite_guardian_pedestal": "Supreme Guardian Pedestal",
+
+  "block.istars-mob-pedestal.golden_hoglin_pedestal": "Lesser Hoglin Pedestal",
+  "block.istars-mob-pedestal.diamond_hoglin_pedestal": "Greater Hoglin Pedestal",
+  "block.istars-mob-pedestal.netherite_hoglin_pedestal": "Supreme Hoglin Pedestal",
+
+  "block.istars-mob-pedestal.golden_magma_cube_pedestal": "Lesser Magma Cube Pedestal",
+  "block.istars-mob-pedestal.diamond_magma_cube_pedestal": "Greater Magma Cube Pedestal",
+  "block.istars-mob-pedestal.netherite_magma_cube_pedestal": "Supreme Magma Cube Pedestal",
+
+  "block.istars-mob-pedestal.golden_wither_skeleton_pedestal": "Lesser Wither Skeleton Pedestal",
+  "block.istars-mob-pedestal.diamond_wither_skeleton_pedestal": "Greater Wither Skeleton Pedestal",
+  "block.istars-mob-pedestal.netherite_wither_skeleton_pedestal": "Supreme Wither Skeleton Pedestal",
+
+  "block.istars-mob-pedestal.golden_ghast_pedestal": "Lesser Ghast Pedestal",
+  "block.istars-mob-pedestal.diamond_ghast_pedestal": "Greater Ghast Pedestal",
+  "block.istars-mob-pedestal.netherite_ghast_pedestal": "Supreme Ghast Pedestal",
 
 
   "itemgroup.pedestal": "IStar's Mob Pedestal"

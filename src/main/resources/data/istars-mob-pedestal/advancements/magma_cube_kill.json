@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "killed_magma_cube": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:magma_cube"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "istars-mob-pedestal:magma_cube_kill"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "killed_drowned": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:drowned"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "istars-mob-pedestal:drowned_kill"
+    }
+}

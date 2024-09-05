@@ -17,6 +17,15 @@ public class ModBlockEntities {
                             (pos, state) -> {
                                 Block block = state.getBlock();
 
+                                // Magma Cube Pedestals
+                                if (block == ModBlocks.GOLDEN_MAGMA_CUBE_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.MAGMA_CUBE, 24);
+                                } else if (block == ModBlocks.DIAMOND_MAGMA_CUBE_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.MAGMA_CUBE, 64);
+                                } else if (block == ModBlocks.NETHERITE_MAGMA_CUBE_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.MAGMA_CUBE, 128);
+                                }
+
                                 // Slime Pedestals
                                 if (block == ModBlocks.GOLDEN_SLIME_PEDESTAL) {
                                     return new MobPedestalBlockEntity(pos, state, MobType.SLIME, 24);
@@ -98,13 +107,82 @@ public class ModBlockEntities {
                                     return new MobPedestalBlockEntity(pos, state, MobType.ENDERMAN, 128);
                                 }
 
-                                // Witch Pedestals
-                                else if (block == ModBlocks.GOLDEN_WITCH_PEDESTAL) {
-                                    return new MobPedestalBlockEntity(pos, state, MobType.WITCH, 24);
-                                } else if (block == ModBlocks.DIAMOND_WITCH_PEDESTAL) {
-                                    return new MobPedestalBlockEntity(pos, state, MobType.WITCH, 64);
-                                } else if (block == ModBlocks.NETHERITE_WITCH_PEDESTAL) {
-                                    return new MobPedestalBlockEntity(pos, state, MobType.WITCH, 128);
+                                // Drowned Pedestals
+                                else if (block == ModBlocks.GOLDEN_DROWNED_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.DROWNED, 24);
+                                }
+                                else if (block == ModBlocks.DIAMOND_DROWNED_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.DROWNED, 64);
+                                }
+                                else if (block == ModBlocks.NETHERITE_DROWNED_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.DROWNED, 128);
+                                }
+
+                                // Zombified Piglin Pedestals
+                                else if (block == ModBlocks.GOLDEN_ZOMBIFIED_PIGLIN_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.ZOMBIFIED_PIGLIN, 24);
+                                }
+                                else if (block == ModBlocks.DIAMOND_ZOMBIFIED_PIGLIN_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.ZOMBIFIED_PIGLIN, 64);
+                                }
+                                else if (block == ModBlocks.NETHERITE_ZOMBIFIED_PIGLIN_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.ZOMBIFIED_PIGLIN, 128);
+                                }
+
+                                // Blaze Pedestals
+                                else if (block == ModBlocks.GOLDEN_BLAZE_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.BLAZE, 24);
+                                }
+                                else if (block == ModBlocks.DIAMOND_BLAZE_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.BLAZE, 64);
+                                }
+                                else if (block == ModBlocks.NETHERITE_BLAZE_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.BLAZE, 128);
+                                }
+
+                                // Guardian Pedestals
+                                else if (block == ModBlocks.GOLDEN_GUARDIAN_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.GUARDIAN, 24);
+                                }
+                                else if (block == ModBlocks.DIAMOND_GUARDIAN_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.GUARDIAN, 64);
+                                }
+                                else if (block == ModBlocks.NETHERITE_GUARDIAN_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.GUARDIAN, 128);
+                                }
+
+                                // Hoglin Pedestals
+                                else if (block == ModBlocks.GOLDEN_HOGLIN_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.HOGLIN, 24);
+                                }
+                                else if (block == ModBlocks.DIAMOND_HOGLIN_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.HOGLIN, 64);
+                                }
+                                else if (block == ModBlocks.NETHERITE_HOGLIN_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.HOGLIN, 128);
+                                }
+
+
+                                // Wither Skeleton Pedestals
+                                else if (block == ModBlocks.GOLDEN_WITHER_SKELETON_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.WITHER_SKELETON, 24);
+                                }
+                                else if (block == ModBlocks.DIAMOND_WITHER_SKELETON_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.WITHER_SKELETON, 64);
+                                }
+                                else if (block == ModBlocks.NETHERITE_WITHER_SKELETON_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.WITHER_SKELETON, 128);
+                                }
+
+                                // Ghast Pedestals
+                                else if (block == ModBlocks.GOLDEN_GHAST_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.GHAST, 24);
+                                }
+                                else if (block == ModBlocks.DIAMOND_GHAST_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.GHAST, 64);
+                                }
+                                else if (block == ModBlocks.NETHERITE_GHAST_PEDESTAL) {
+                                    return new MobPedestalBlockEntity(pos, state, MobType.GHAST, 128);
                                 }
 
                                 return null;  // Should not happen, add a fallback or throw an exception if needed.
@@ -112,6 +190,9 @@ public class ModBlockEntities {
                             ModBlocks.GOLDEN_SLIME_PEDESTAL,
                             ModBlocks.DIAMOND_SLIME_PEDESTAL,
                             ModBlocks.NETHERITE_SLIME_PEDESTAL,
+                            ModBlocks.GOLDEN_MAGMA_CUBE_PEDESTAL,
+                            ModBlocks.DIAMOND_MAGMA_CUBE_PEDESTAL,
+                            ModBlocks.NETHERITE_MAGMA_CUBE_PEDESTAL,
                             ModBlocks.GOLDEN_SKELETON_PEDESTAL,
                             ModBlocks.DIAMOND_SKELETON_PEDESTAL,
                             ModBlocks.NETHERITE_SKELETON_PEDESTAL,

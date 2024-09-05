@@ -9,6 +9,14 @@
     "istars-mob-pedestal:spider_kill",
     "istars-mob-pedestal:witch_kill",
     "istars-mob-pedestal:enderman_kill",
-    "istars-mob-pedestal:phantom_kill"
+    "istars-mob-pedestal:phantom_kill",
+    "istars-mob-pedestal:drowned_kill",
+    "istars-mob-pedestal:zombified_piglin_kill",
+    "istars-mob-pedestal:blaze_kill",
+    "istars-mob-pedestal:guardian_kill",
+    "istars-mob-pedestal:hoglin_kill",
+    "istars-mob-pedestal:magma_cube_kill",
+    "istars-mob-pedestal:wither_skeleton_kill",
+    "istars-mob-pedestal:ghast_kill"
   ]
 }

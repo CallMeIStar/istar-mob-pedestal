@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "killed_ghast": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:ghast"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "istars-mob-pedestal:ghast_kill"
+    }
+}

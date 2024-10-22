@@ -54,7 +54,13 @@ public class MobPedestalBlockEntity extends BlockEntity {
         this.mobType = MobType.valueOf(nbt.getString("MobType"));
         this.radius = nbt.getInt("Radius");
         this.active = nbt.getBoolean("Active"); // Load activation state
+
+        // Re-register the totem with the tracker if it's active
+        if (world != null && !world.isClient && active) {
+            MobPedestalTracker.addTotem(mobType, pos, radius);
+        }
     }
+
 
     // Called when the block entity is loaded
     @Override

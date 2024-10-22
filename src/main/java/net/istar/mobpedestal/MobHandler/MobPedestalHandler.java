@@ -22,14 +22,19 @@ public class MobPedestalHandler {
 
     private static void onEntityLoad(Entity entity, ServerWorld world) {
         if (entity instanceof MobEntity) {
+            MobEntity mobEntity = (MobEntity) entity;
             BlockPos spawnPos = entity.getBlockPos();
-            MobType mobType = MobType.fromEntity(entity);
+            MobType mobType = MobType.fromEntity(mobEntity);
 
-            if (mobType != null) {
-                if (MobPedestalTracker.isNearTotem(mobType, spawnPos)) {
-                    entity.discard();
-                }
+            if (mobEntity.isPersistent() || mobEntity.hasVehicle()) {
+                return;  // Skip processing if the entity is named, has passengers, or is in a vehicle
+            }
+
+            if (mobType != null && MobPedestalTracker.isNearTotem(mobType, spawnPos)) {
+                // Do not discard if the entity should not be discarded based on custom conditions
+                // Optionally, add additional logic for persistence if needed
+                entity.discard();
+            }
             }
         }
     }
-}

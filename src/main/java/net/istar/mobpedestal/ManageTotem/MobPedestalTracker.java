@@ -12,6 +12,7 @@ import java.util.Set;
 public class MobPedestalTracker {
 
     private static final Map<MobType, Map<Integer, Set<BlockPos>>> PEDSTAL_POSITIONS = new HashMap<>();
+    
 
     public static void addTotem(MobType mobType, BlockPos pos, int radius) {
         PEDSTAL_POSITIONS

@@ -111,6 +111,10 @@ public class MobPedestalBlock extends Block implements BlockEntityProvider {
         BlockEntity blockEntity = world.getBlockEntity(pos);
         if (blockEntity instanceof MobPedestalBlockEntity) {
             MobPedestalBlockEntity pedestal = (MobPedestalBlockEntity) blockEntity;
+
+            // Sync the block entity's active field with the block state
+            pedestal.setActive(newState.get(ACTIVE));
+
             if (newState.get(ACTIVE)) {
                 MobPedestalTracker.addTotem(pedestal.getMobType(), pos, pedestal.getRadius());
             } else {
@@ -122,5 +126,33 @@ public class MobPedestalBlock extends Block implements BlockEntityProvider {
         world.playSound(null, pos, SoundEvents.BLOCK_COMPARATOR_CLICK, SoundCategory.BLOCKS, 1.0F, 1.0F);
 
         return ActionResult.SUCCESS;
+    }
+    @Override
+    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {
+        int powerLevel = world.getReceivedRedstonePower(pos);
+
+        // Check the power level and update the active state accordingly
+        if (powerLevel == 15) {
+            // If the power level is at maximum, turn off the pedestal
+            if (state.get(ACTIVE)) {
+                world.setBlockState(pos, state.with(ACTIVE, false), Block.NOTIFY_ALL);
+                MobPedestalTracker.removeTotem(mobType, pos, radius);
+                updateBlockEntity(world, pos, false);
+            }
+        } else if (powerLevel >= 1 && powerLevel < 15) {
+            // If the power level is between 1 and 14, turn on the pedestal
+            if (!state.get(ACTIVE)) {
+                world.setBlockState(pos, state.with(ACTIVE, true), Block.NOTIFY_ALL);
+                MobPedestalTracker.addTotem(mobType, pos, radius);
+                updateBlockEntity(world, pos, true);
+            }
+        }
+    }
+    private void updateBlockEntity(World world, BlockPos pos, boolean active) {
+        BlockEntity blockEntity = world.getBlockEntity(pos);
+        if (blockEntity instanceof MobPedestalBlockEntity) {
+            MobPedestalBlockEntity pedestal = (MobPedestalBlockEntity) blockEntity;
+            pedestal.setActive(active);
+        }
     }
 }

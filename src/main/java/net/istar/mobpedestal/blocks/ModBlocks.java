@@ -14,6 +14,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
+
     public static final Block GOLDEN_DROWNED_PEDESTAL = registerBlock(
             "golden_drowned_pedestal",
             new MobPedestalBlock(

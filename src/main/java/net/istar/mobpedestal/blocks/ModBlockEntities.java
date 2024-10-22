@@ -222,7 +222,6 @@ public class ModBlockEntities {
                             ModBlocks.NETHERITE_ENDERMAN_PEDESTAL
                     ).build());
 
-
     public static void registerBlockEntities() {
         IStarsMobPedestal.LOGGER.info("Registering Block Entities for " + IStarsMobPedestal.MOD_ID);
     }
